@@ -1,4 +1,4 @@
 package entity.biologicalOrganism.fauna.herbivore;
 
-public class Rabbit {
+public class Rabbit extends Herbivore{
 }

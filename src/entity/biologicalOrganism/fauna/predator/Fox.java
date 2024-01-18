@@ -1,4 +1,4 @@
 package entity.biologicalOrganism.fauna.predator;
 
-public class Fox {
+public class Fox extends Predator{
 }

@@ -1,4 +1,4 @@
 package entity.biologicalOrganism.flora;
 
-public class Grass {
+public class Grass extends Flora {
 }
