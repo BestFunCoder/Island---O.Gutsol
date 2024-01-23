@@ -1,6 +1,6 @@
-package entity.biologicalOrganism.fauna;
+package com.island.entity.biologicalOrganism.fauna;
 
-import entity.biologicalOrganism.BiologicalOrganism;
+import com.island.entity.biologicalOrganism.BiologicalOrganism;
 
 public abstract class Fauna extends BiologicalOrganism {
     public abstract  void eat();
