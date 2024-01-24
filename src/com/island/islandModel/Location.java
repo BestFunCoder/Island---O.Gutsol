@@ -1,7 +1,7 @@
 package com.island.islandModel;
 
-import com.island.entity.biologicalOrganism.fauna.Fauna;
-import com.island.entity.biologicalOrganism.flora.Flora;
+import com.island.biologicalOrganism.fauna.Fauna;
+import com.island.biologicalOrganism.flora.Flora;
 
 import java.util.ArrayList;
 import java.util.List;

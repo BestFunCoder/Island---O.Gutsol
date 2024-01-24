@@ -7,9 +7,7 @@ public class Main {
         Accost accost = new Accost();
         Initialize initialize = accost.accost();
 
-        IslandModel islandModel= new IslandModel();
-        islandModel.setRows(initialize);
-
+        IslandModel islandModel= new IslandModel(initialize);
 
     }
 }
