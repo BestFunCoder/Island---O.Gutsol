@@ -1,10 +1,10 @@
 package com.island.biologicalOrganism.flora;
 
-public abstract class Grass extends Flora {
+public class Grass extends Flora {
 
-    public boolean isAlive = true;
-    public int maxValueOrganismLocation = 200;
-    public int weight= 1;
-// public  multiply;
+    // Доданий конструктор зі значеннями true, 1, 200
+    public Grass() {
+        super(true, 1, 200);
+    }
 
 }

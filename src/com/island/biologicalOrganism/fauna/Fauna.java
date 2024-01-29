@@ -3,44 +3,17 @@ import com.island.biologicalOrganism.BiologicalOrganism;
 
 public abstract class Fauna extends BiologicalOrganism {
 
-    private boolean isAlive;
-    private int maxValueOrganismLocation;
-    private int weight;
     private int rangeOfMotion;
-    private int foodForSatiety;
+    private double foodForSatiety;
 
-    public Fauna(boolean isAlive, int maxValueOrganismLocation, int weight, int rangeOfMotion, int foodForSatiety) {
-        this.isAlive = isAlive;
-        this.maxValueOrganismLocation = maxValueOrganismLocation;
-        this.weight = weight;
+    // Конструктор для ініціалізації полів Fauna та BiologicalOrganism
+    public Fauna(boolean isAlive, double weight, int maxValueOrganism, int rangeOfMotion, double foodForSatiety) {
+        super(isAlive, weight, maxValueOrganism);
         this.rangeOfMotion = rangeOfMotion;
         this.foodForSatiety = foodForSatiety;
     }
 
-    public boolean isAlive() {
-        return isAlive;
-    }
-
-    public void setAlive(boolean alive) {
-        isAlive = alive;
-    }
-
-    public int getMaxValueOrganismLocation() {
-        return maxValueOrganismLocation;
-    }
-
-    public void setMaxValueOrganismLocation(int maxValueOrganismLocation) {
-        this.maxValueOrganismLocation = maxValueOrganismLocation;
-    }
-
-    public int getWeight() {
-        return weight;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
+    // Геттери та сеттери для полів Fauna
     public int getRangeOfMotion() {
         return rangeOfMotion;
     }
@@ -49,14 +22,11 @@ public abstract class Fauna extends BiologicalOrganism {
         this.rangeOfMotion = rangeOfMotion;
     }
 
-    public int getFoodForSatiety() {
+    public double getFoodForSatiety() {
         return foodForSatiety;
     }
 
-    public void setFoodForSatiety(int foodForSatiety) {
+    public void setFoodForSatiety(double foodForSatiety) {
         this.foodForSatiety = foodForSatiety;
     }
-
-    public abstract  void eat();
-    public abstract void move();
 }
