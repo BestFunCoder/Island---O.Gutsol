@@ -4,18 +4,6 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class ConfigReader {
-       /* private static final String CONFIG_FILE_PATH = "com/island/islandModel/config.properties";
-
-        private Properties properties;
-
-        public ConfigReader() {
-            properties = new Properties();
-            try (FileInputStream input = new FileInputStream(CONFIG_FILE_PATH)) {
-                properties.load(input);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }*/
 
         private Properties properties;
 
@@ -31,7 +19,6 @@ public class ConfigReader {
                         e.printStackTrace();
                 }
         }
-
 
 
         public int getMaxWolf() {
