@@ -66,7 +66,6 @@ public class Location {
 
 
     private void addPredatorsRandomly(Class<? extends Predator> predatorClass, int maxCount) {
-        Random random = new Random();
         int count = random.nextInt(maxCount + 1);
 
         try {
@@ -80,7 +79,6 @@ public class Location {
     }
 
     private void addHerbivoresRandomly(Class<? extends Herbivore> herbivoreClass, int maxCount) {
-        Random random = new Random();
         int count = random.nextInt(maxCount + 1);
 
         try {
@@ -94,7 +92,6 @@ public class Location {
     }
 
     private void addFlorasRandomly(Class<? extends Flora> floraClass, int maxCount) {
-        Random random = new Random();
         int count = random.nextInt(maxCount + 1);
 
         try {
@@ -107,7 +104,4 @@ public class Location {
         }
     }
 
-
-
-    // Решта коду класу
 }
