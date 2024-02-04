@@ -23,11 +23,11 @@ public class StatisticsManager {
 
         for (Location[] row : islandModel.getIsland()) {
             for (Location location : row) {
-                wolvesCount += location.getPredatorList().stream().filter(predator -> predator instanceof Wolf).count();
-                boasCount += location.getPredatorList().stream().filter(predator -> predator instanceof Boa).count();
-                foxesCount += location.getPredatorList().stream().filter(predator -> predator instanceof Fox).count();
-                bearsCount += location.getPredatorList().stream().filter(predator -> predator instanceof Bear).count();
-                eaglesCount += location.getPredatorList().stream().filter(predator -> predator instanceof Eagle).count();
+                wolvesCount = (int) location.getPredatorList().stream().filter(predator -> predator instanceof Wolf).count();
+                boasCount = (int) location.getPredatorList().stream().filter(predator -> predator instanceof Boa).count();
+                foxesCount = (int) location.getPredatorList().stream().filter(predator -> predator instanceof Fox).count();
+                bearsCount = (int) location.getPredatorList().stream().filter(predator -> predator instanceof Bear).count();
+                eaglesCount = (int) location.getPredatorList().stream().filter(predator -> predator instanceof Eagle).count();
             }
         }
 
@@ -53,16 +53,16 @@ public class StatisticsManager {
 
         for (Location[] row : islandModel.getIsland()) {
             for (Location location : row) {
-                horsesCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Horse).count();
-                deersCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Deer).count();
-                rabbitsCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Rabbit).count();
-                mousesCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Mouse).count();
-                goatsCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Goat).count();
-                sheepsCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Sheep).count();
-                boarsCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Boar).count();
-                buffalosCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Buffalo).count();
-                ducksCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Duck).count();
-                caterpillarsCount += location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Caterpillar).count();
+                horsesCount = (int) location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Horse).count();
+                deersCount = (int) (deersCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Deer).count());
+                rabbitsCount = (int) (rabbitsCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Rabbit).count());
+                mousesCount = (int) (mousesCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Mouse).count());
+                goatsCount = (int) (goatsCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Goat).count());
+                sheepsCount = (int) (sheepsCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Sheep).count());
+                boarsCount = (int) (boarsCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Boar).count());
+                buffalosCount = (int) (buffalosCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Buffalo).count());
+                ducksCount = (int) (ducksCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Duck).count());
+                caterpillarsCount = (int) (caterpillarsCount + location.getHerbivoreList().stream().filter(herbivore -> herbivore instanceof Caterpillar).count());
             }
         }
 
@@ -84,7 +84,7 @@ public class StatisticsManager {
 
         for (Location[] row : islandModel.getIsland()) {
             for (Location location : row) {
-                grassCount += location.getFloraList().stream().filter(flora -> flora instanceof Grass).count();
+                grassCount = (int) (grassCount + location.getFloraList().stream().filter(flora -> flora instanceof Grass).count());
             }
         }
 
